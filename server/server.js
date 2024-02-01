@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://trinetraentreprise.netlify.app/"],
+    origin: ["http://localhost:3000", "https://trinetra-inventory-management-software-aoxa-f7848virm.vercel.app/"],
     credentials: true,
   })
 );
