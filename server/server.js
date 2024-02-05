@@ -17,12 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(cors({
-  origin: ["http://localhost:3000", "https://trinetra-inventory-management-software-4j77tf99n-ankit980533.vercel.app/"],
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true,
-  optionsSuccessStatus: 204,
-}));
+app.use(cors());
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
