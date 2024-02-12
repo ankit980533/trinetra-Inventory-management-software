@@ -18,7 +18,7 @@ const registerUser = asyncHandler(async (req, res) => {
   // Validation
   if (!name || !email || !password) {
     res.status(400);
-    throw new Error("Please fill in all required fields");
+    throw new Error("Please fill in all required fields and this error");
   }
   if (password.length < 6) {
     res.status(400);
