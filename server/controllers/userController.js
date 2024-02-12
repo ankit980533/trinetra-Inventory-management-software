@@ -199,7 +199,7 @@ const changePassword = asyncHandler(async (req, res) => {
 
   if (!user) {
     res.status(400);
-    throw new Error("User not found, please signup");
+    throw new Error("User not found, please signup and got the signup issue");
   }
   //Validate
   if (!oldPassword || !password) {
