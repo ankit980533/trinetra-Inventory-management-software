@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const corsOptions = {
   origin: 'http://localhost:3000',
-  credentials: true // This is important to include if your requests include credentials
+  credentials: true 
 };
 
 app.use(cors(corsOptions));
