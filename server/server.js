@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://trinetra-inventory-management-software-d6pb.vercel.app"],
+  origin: ["https://trinetra-inventory-management-software-d6pb.vercel.app"],
   credentials: true 
 };
     
