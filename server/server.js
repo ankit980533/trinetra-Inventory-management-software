@@ -36,7 +36,7 @@ app.use(cors(corsOptions));
 app.options('*', (req, res) => {
   console.log('Received preflight request');
   // Add CORS headers
-  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'https://trinetra-inventory-management-software-d6pb.vercel.app');
   res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.status(200).send();
