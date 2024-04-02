@@ -32,7 +32,7 @@ const allowedOrigins = ["https://trinetra-inventory-management-software-d6pb.ver
 const corsOptions = {
   origin: function (origin, callback) {
     // Check if the origin is allowed or if it's a CORS preflight request
-    console.log(allowedOrigins);
+    //console.log(allowedOrigins);
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
