@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const corsOptions = {
-  //  origin: ["http://localhost:3001", "https://trinetra-inventory-management-software-d6pb.vercel.app"],
+   origin: ["http://localhost:3001", "https://trinetra-inventory-management-software-d6pb.vercel.app"],
   credentials: true 
 };
 
@@ -33,14 +33,7 @@ app.use(cors(corsOptions));
 //   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 //   next();
 // });
-app.options('*', (req, res) => {
-  console.log('Received preflight request');
-  // Add CORS headers
-  res.header('Access-Control-Allow-Origin', 'https://trinetra-inventory-management-software-d6pb.vercel.app');
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  res.status(200).send();
-});
+
 
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
