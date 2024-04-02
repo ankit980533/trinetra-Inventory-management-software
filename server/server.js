@@ -18,7 +18,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 const corsOptions = {
-   origin: ["http://localhost:3001", "https://trinetra-inventory-management-software-d6pb.vercel.app"],
+  //  origin: ["http://localhost:3001", "https://trinetra-inventory-management-software-d6pb.vercel.app"],
   credentials: true 
 };
 
@@ -26,6 +26,14 @@ const corsOptions = {
 // https://trinetra-inventory-management-software-d6pb.vercel.app/
 
 app.use(cors(corsOptions));
+
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "http://localhost:3001"); 
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
