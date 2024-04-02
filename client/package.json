@@ -47,5 +47,6 @@
   },
   "devDependencies": {
     "sass": "^1.70.0"
-  }
+  },
+  "proxy": "https://trinetra-inventory-management-software.vercel.app"
 }
