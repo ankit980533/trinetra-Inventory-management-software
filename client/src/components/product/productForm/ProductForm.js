@@ -30,13 +30,13 @@ const ProductForm = ({
               onChange={(e) => handleImageChange(e)}
             /> */}
 
-            {imagePreview != null ? (
+            {/* {imagePreview != null ? (
               <div className="image-preview">
                 <img src={imagePreview} alt="product" />
               </div>
             ) : (
               <p>No image set for this poduct.</p>
-            )}
+            )} */}
           </Card>
           <label>Product Name:</label>
           <input
