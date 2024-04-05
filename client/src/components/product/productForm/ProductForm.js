@@ -20,7 +20,7 @@ const ProductForm = ({
       <Card cardClass={"card"}>
         <form onSubmit={saveProduct}>
           <Card cardClass={"group"}>
-            <label>Product Image</label>
+            {/* <label>Product Image</label>
             <code className="--color-dark">
               Supported Formats: jpg, jpeg, png
             </code>
@@ -28,7 +28,7 @@ const ProductForm = ({
               type="file"
               name="image"
               onChange={(e) => handleImageChange(e)}
-            />
+            /> */}
 
             {imagePreview != null ? (
               <div className="image-preview">
